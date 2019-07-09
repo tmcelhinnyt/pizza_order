@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proper Pizza</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="jumbotron">
+            <h1>Welcome to Proper Pizza</h1> 
+        </div>
+        <form id="order-form">
+            <div class="form-group">
+                <h2>Please choose some vegetables:</h2>
+                <h3>[$.25 each. Note: Pineapple is not an option because that is a pizza sacrilege.]</h3>
+                <input type="checkbox" name="vegetable" value="onion"> Onion.<br>
+                <input type="checkbox" name="vegetable" value="pepper"> Pepper.<br>
+                <input type="checkbox" name="vegetable" value="mushroom"> Mushroom.<br>
+                <input type="checkbox" name="vegetable" value="olive"> Olive.<br>
+                <input type="checkbox" name="vegetable" value="tomato"> Fresh Tomato.<br>
+            </div>
+            <div class="form-group">
+                <h2>Select any protein:</h2>
+                <h3>[$1 each]</h3>
+                <input type="checkbox" name="protein" value="tofu"> Tofu.<br>
+                <input type="checkbox" name="protein" value="chicken"> chicken.<br>
+                <input type="checkbox" name="protein" value="beef"> Beef.<br>
+                <input type="checkbox" name="protein" value="pork"> Pork.<br>
+            </div>
+            <div class="form-group">
+                <h2>Which Size would you like?</h2>
+                <h3>[$10 for a Small, $12 for a Medium, and $14 for a Large]</h3>
+                <input type="radio" name="size" value="small"> Small.<br>
+                <input type="radio" name="size" value="medium"> Medium.<br>
+                <input type="radio" name="size" value="large"> Large.<br>
+            </div>
+            <button type="submit">Submit Survey</button>
+        </form>
+        <span id="order-receipt">
+            <p><b>Your order of a [size] pizza with [vegetables] and [protein], will be [cost]</b></p>
+            <br>
+            <img src="img/pizza.jpg" alt="a pizza graphic.">
+            <!-- this image needs a container around it since the append is interacting with it. -->
+        </span>
+    </div>
+</body>
+</html>
